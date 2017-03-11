@@ -1,1 +1,9 @@
 1.0.1: First version of Foodbug
+1.0.2:
+    - Create base database tables
+    - create_animals_table.php
+    - create_details_table.php
+    - create_groups_table.php
+    - create_packagings_table.php
+    - create_sizes_table.php
+    - create_units_table.php

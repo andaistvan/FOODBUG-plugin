@@ -17,9 +17,9 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Foodbug',
-            'description' => 'No description provided yet...',
+            'description' => 'eledelallat.hu plugin',
             'author'      => 'Arteriaweb',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-dollar'
         ];
     }
 
