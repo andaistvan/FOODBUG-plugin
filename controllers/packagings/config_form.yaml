@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Packaging
+
+# Model Form Field configuration
+form: $/arteriaweb/foodbug/models/packaging/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Foodbug\Models\Packaging
+
+# Default redirect location
+defaultRedirect: arteriaweb/foodbug/packagings
+
+# Create page
+create:
+    title: Create Packaging
+    redirect: arteriaweb/foodbug/packagings/update/:id
+    redirectClose: arteriaweb/foodbug/packagings
+
+# Update page
+update:
+    title: Edit Packaging
+    redirect: arteriaweb/foodbug/packagings
+    redirectClose: arteriaweb/foodbug/packagings
+
+# Preview page
+preview:
+    title: Preview Packaging

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Size
+
+# Model Form Field configuration
+form: $/arteriaweb/foodbug/models/size/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Foodbug\Models\Size
+
+# Default redirect location
+defaultRedirect: arteriaweb/foodbug/sizes
+
+# Create page
+create:
+    title: Create Size
+    redirect: arteriaweb/foodbug/sizes/update/:id
+    redirectClose: arteriaweb/foodbug/sizes
+
+# Update page
+update:
+    title: Edit Size
+    redirect: arteriaweb/foodbug/sizes
+    redirectClose: arteriaweb/foodbug/sizes
+
+# Preview page
+preview:
+    title: Preview Size

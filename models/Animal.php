@@ -25,13 +25,19 @@ class Animal extends Model
     /**
      * @var array Relations
      */
-    public $hasOne = [];
+    public $hasOne = [
+        'groups' => 'Arteriaweb\Foodbug\Models\Group'
+    ];
     public $hasMany = [];
     public $belongsTo = [];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
-    public $attachMany = [];
+    public $attachOne = [
+        'featimage' => 'System\Models\File'
+    ];
+    public $attachMany = [
+        'feat_gallery' => 'System\Models\File'
+    ];
 }

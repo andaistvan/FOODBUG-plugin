@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Group
+
+# Model Form Field configuration
+form: $/arteriaweb/foodbug/models/group/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Foodbug\Models\Group
+
+# Default redirect location
+defaultRedirect: arteriaweb/foodbug/groups
+
+# Create page
+create:
+    title: Create Group
+    redirect: arteriaweb/foodbug/groups/update/:id
+    redirectClose: arteriaweb/foodbug/groups
+
+# Update page
+update:
+    title: Edit Group
+    redirect: arteriaweb/foodbug/groups
+    redirectClose: arteriaweb/foodbug/groups
+
+# Preview page
+preview:
+    title: Preview Group

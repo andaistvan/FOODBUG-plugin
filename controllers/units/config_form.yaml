@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Unit
+
+# Model Form Field configuration
+form: $/arteriaweb/foodbug/models/unit/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Foodbug\Models\Unit
+
+# Default redirect location
+defaultRedirect: arteriaweb/foodbug/units
+
+# Create page
+create:
+    title: Create Unit
+    redirect: arteriaweb/foodbug/units/update/:id
+    redirectClose: arteriaweb/foodbug/units
+
+# Update page
+update:
+    title: Edit Unit
+    redirect: arteriaweb/foodbug/units
+    redirectClose: arteriaweb/foodbug/units
+
+# Preview page
+preview:
+    title: Preview Unit

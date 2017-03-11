@@ -11,4 +11,3 @@ columns:
         label: 'Megnevezés'
         searchable: true
         sortable: true
-    

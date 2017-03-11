@@ -81,15 +81,42 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
+        // return []; // Remove this line to activate
 
         return [
             'foodbug' => [
                 'label'       => 'Foodbug',
-                'url'         => Backend::url('arteriaweb/foodbug/mycontroller'),
-                'icon'        => 'icon-leaf',
+                'url'         => Backend::url('arteriaweb/foodbug/animals'),
+                'icon'        => 'icon-dollar',
                 'permissions' => ['arteriaweb.foodbug.*'],
                 'order'       => 500,
+                'sideMenu' => [
+                    'deatils' => [
+                        'label' => 'Details',
+                        'icon' => 'icon-bug',
+                        'url' => Backend::url('arteriaweb/foodbug/details')
+                    ],
+                    'groups' => [
+                        'label' => 'MAIN Groups',
+                        'icon' => 'icon-certificate',
+                        'url' => Backend::url('arteriaweb/foodbug/groups')
+                    ],
+                    'packagings' => [
+                        'label' => 'Packagings',
+                        'icon' => 'icon-list-ol',
+                        'url' => Backend::url('arteriaweb/foodbug/packagings')
+                    ],
+                    'sizes' => [
+                        'label' => 'Sizes',
+                        'icon' => 'icon-list-ul',
+                        'url' => Backend::url('arteriaweb/foodbug/sizes')
+                    ],
+                    'units' => [
+                        'label' => 'Units',
+                        'icon' => 'icon-barcode',
+                        'url' => Backend::url('arteriaweb/foodbug/units')
+                    ],
+                ]
             ],
         ];
     }

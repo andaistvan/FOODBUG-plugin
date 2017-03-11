@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Animal
+
+# Model Form Field configuration
+form: $/arteriaweb/foodbug/models/animal/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Foodbug\Models\Animal
+
+# Default redirect location
+defaultRedirect: arteriaweb/foodbug/animals
+
+# Create page
+create:
+    title: Create Animal
+    redirect: arteriaweb/foodbug/animals/update/:id
+    redirectClose: arteriaweb/foodbug/animals
+
+# Update page
+update:
+    title: Edit Animal
+    redirect: arteriaweb/foodbug/animals
+    redirectClose: arteriaweb/foodbug/animals
+
+# Preview page
+preview:
+    title: Preview Animal
