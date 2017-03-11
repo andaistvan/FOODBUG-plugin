@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    # pivot[group]:
+    #     label: 'Csoport'
+    #     defaultFrom: group_title
+
+    pivot[group]:
+        label: Group
+        type: relation
+        nameFrom: group_title

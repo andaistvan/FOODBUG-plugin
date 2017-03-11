@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    pivot[packaging]:
+        label: Ár
+        width: 150px
+
+    pivot[size]:
+        label: Méret
+        width: 150px
+        
+    pivot[unit]:
+        label: Egység
+        width: 250px

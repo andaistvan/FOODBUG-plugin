@@ -34,4 +34,6 @@ class Size extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+    public $timestamps = false;
 }

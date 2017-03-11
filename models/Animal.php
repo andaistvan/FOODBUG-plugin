@@ -22,6 +22,7 @@ class Animal extends Model
      */
     protected $fillable = [];
 
+    public $timestamps = false;
     /**
      * @var array Relations
      */
@@ -30,7 +31,13 @@ class Animal extends Model
     ];
     public $hasMany = [];
     public $belongsTo = [];
-    public $belongsToMany = [];
+    public $belongsToMany = [
+        'details' => [
+            'Arteriaweb\Foodbug\Models\Detail',
+            'table' => 'arteriaweb_foodbug_animals_details'
+            // 'order' => ''
+        ]
+    ];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];

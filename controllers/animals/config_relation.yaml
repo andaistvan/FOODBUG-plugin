@@ -1,0 +1,22 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+fields:
+    groups:
+        label: 'group'
+        view:
+            list: $arteriaweb/foodbug/models/group/columns.yaml
+            toolbarButtons: add|remove
+        manage:
+            showSearch: true
+            recordsPerPage: 10
+            list: $/arteriaweb/foodbug/models/group/columns.yaml
+            form: $/arteriaweb/foodbug/models/group/fields.yaml
+    details:
+        label: 'detail'
+        view:
+            list: $arteriaweb/foodbug/models/detail/columns.yaml
+            toolbarButtons: add|remove
+        manage:
+            form: $arteriaweb/foodbug/models/detail/fields.yaml

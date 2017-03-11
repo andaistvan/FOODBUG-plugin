@@ -34,4 +34,6 @@ class Unit extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+    public $timestamps = false;
 }

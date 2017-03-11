@@ -8,5 +8,4 @@ columns:
         searchable: true
     group_title:
         label: 'Csoport'
-        searchable: true
-        sortable: true
+        showSearch: true

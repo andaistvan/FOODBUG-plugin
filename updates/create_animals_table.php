@@ -34,5 +34,7 @@ class CreateAnimalsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('arteriaweb_foodbug_animals');
+        Schema::dropIfExists('arteriaweb_foodbug_animals_details');
+        Schema::dropIfExists('arteriaweb_foodbug_details_groups');
     }
 }

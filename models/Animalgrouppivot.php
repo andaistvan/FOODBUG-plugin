@@ -3,14 +3,14 @@
 use Model;
 
 /**
- * Packaging Model
+ * Animalgrouppivot Model
  */
-class Packaging extends Model
+class Animalgrouppivot extends Model
 {
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'arteriaweb_foodbug_packagings';
+    public $table = 'arteriaweb_foodbug_animalgrouppivots';
 
     /**
      * @var array Guarded fields
@@ -34,6 +34,4 @@ class Packaging extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
-
-    public $timestamps = false;
 }

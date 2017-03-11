@@ -25,7 +25,12 @@ class Detail extends Model
     /**
      * @var array Relations
      */
-    public $hasOne = [];
+    public $hasOne = [
+        'packaging' => 'Arteriaweb\Foodbug\Models\Packaging',
+        'size' => 'Arteriaweb\Foodbug\Models\Size',
+        'unit' => 'Arteriaweb\Foodbug\Models\Unit',
+    ];
+
     public $hasMany = [];
     public $belongsTo = [];
     public $belongsToMany = [];
@@ -34,4 +39,7 @@ class Detail extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+
+    public $timestamps = false;
 }

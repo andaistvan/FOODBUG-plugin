@@ -15,7 +15,7 @@ fields:
     description:
         label: 'Leírás'
         type: richeditor
-        size: huge
+        size: small
     slug:
         label: 'Slug'
         preset:
@@ -33,6 +33,7 @@ fields:
             extension: auto
         span: auto
     feat_gallery:
+        disabled: true
         label: 'Kép galéria'
         type: fileupload
         mode: image
@@ -44,9 +45,8 @@ fields:
             extension: auto
         span: auto
     groups:
-        label: 'Csoport'
-        type: relation
+        label: 'group_title'
+        type: related
     details:
-        label: 'Részletek'
-        type: partial
-        path: field_details
+        label: 'detail_title'
+        type: related
