@@ -6,3 +6,16 @@ columns:
     id:
         label: ID
         searchable: true
+        sortable: true
+    instore:
+        label: 'Raktáron'
+        type: switch
+        default: true
+    packagings:
+        label: 'Kiszerelés'
+        type: related
+        nameFrom: packaging_title
+    price:
+        label: 'Ár'
+        type: number
+    

@@ -6,3 +6,9 @@ columns:
     id:
         label: ID
         searchable: true
+        sortable: true
+    title:
+        label: 'Megnevezés'
+        searchable: true
+        sortable: true
+    

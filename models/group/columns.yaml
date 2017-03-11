@@ -6,3 +6,7 @@ columns:
     id:
         label: ID
         searchable: true
+    group_title:
+        label: 'Csoport'
+        searchable: true
+        sortable: true

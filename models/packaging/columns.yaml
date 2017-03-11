@@ -6,3 +6,7 @@ columns:
     id:
         label: ID
         searchable: true
+    packaging_title:
+        label: 'Kiszerelés'
+        type: text
+        sortable: true

@@ -6,3 +6,22 @@ fields:
     id:
         label: ID
         disabled: true
+    instore:
+        label: 'Raktáron'
+        type: switch
+        default: true
+    packagings:
+        label: 'Kiszerelés'
+        type: related
+        nameFrom: packaging_title
+    sizes:
+        label: 'Méret'
+        type: related
+        nameFrom: size_title
+    price:
+        label: 'Ár (nettó)'
+        type: number;
+    units:
+        label: 'Egység'
+        type: related
+        nameFrom: unit_title

@@ -6,3 +6,7 @@ columns:
     id:
         label: ID
         searchable: true
+    size_title:
+        label: 'Méret'
+        type: text
+        sortable: true

@@ -6,3 +6,7 @@ columns:
     id:
         label: ID
         searchable: true
+    unit_title:
+        label: 'Egység'
+        type: text
+        sortable: true

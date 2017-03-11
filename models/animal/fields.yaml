@@ -6,4 +6,47 @@ fields:
     id:
         label: ID
         disabled: true
-    
+        sortable: true
+    title:
+        label: 'Megnevezés'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'Leírás'
+        type: richeditor
+        size: huge
+    slug:
+        label: 'Slug'
+        preset:
+            field: title
+            type: slug
+    featimage:
+        label: 'Kiemelt kép'
+        type: fileupload
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+    feat_gallery:
+        label: 'Kép galéria'
+        type: fileupload
+        mode: image
+        imageWidth: '80'
+        imageHeight: '80'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+    groups:
+        label: 'Csoport'
+        type: relation
+    details:
+        label: 'Részletek'
+        type: partial
+        path: field_details
